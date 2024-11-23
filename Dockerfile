@@ -16,7 +16,7 @@ RUN apt-get update -y && apt-get install -y \
 RUN pip install --no-cache-dir selenium faker
 
 # Download and install Google Chrome
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+RUN wget https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.85/linux64/chrome-linux64.zip && \
     dpkg -i google-chrome-stable_current_amd64.deb || apt-get install -f -y && \
     chmod +x /usr/bin/google-chrome && \
     rm -f google-chrome-stable_current_amd64.deb
