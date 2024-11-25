@@ -66,8 +66,6 @@ def get_driver(proxy):
     options.add_argument('--allow-running-insecure-content')
 
     options.add_argument('allow-file-access-from-files')
-    options.add_argument('use-fake-device-for-media-stream')
-    options.add_argument('use-fake-ui-for-media-stream')
 
     options.add_argument("--disable-extensions")
     options.add_argument("--proxy-server='direct://'")
